@@ -42,11 +42,11 @@ const Nav = () => {
 
                 {/*Searchbar*/}
                 <div onClick={handleShowSearchBar} className='flex justify-center items-center w-28 mr-10 hover:bg-[#E0F3F9] hover:cursor-pointer hover:border-b-[3px] hover:border-[#003B5C] transition '>
-                    {!showSearchBar ?  <SearchIcon className="h-7 w-7 text-[#227AB5] "/> : <XIcon className=' h-5 w-5'/> }
+                    {showSearchBar ?  <SearchIcon className="h-7 w-7 text-[#227AB5] "/> : <XIcon className=' h-5 w-5'/> }
                     <p  className="text-[#003B5C] text-xl outline-none pl-2 border-none" >Søk</p>
                 </div>
             </div>
-            { !showSearchBar && <Searchbar/> }
+            { !showSearchBar && <Searchbar placeholder='Hva kan vi hjelpe deg med'/> }
 
         </nav>
     )
