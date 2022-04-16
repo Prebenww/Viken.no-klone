@@ -5,7 +5,7 @@ import Search from "./Search";
 const Hero = () => {
     return (
         <div>
-            <Search placeholder='Søk etter ord' />
+          {/*  <Search placeholder='Søk etter ord' />*/}
         </div>
     )
 }
