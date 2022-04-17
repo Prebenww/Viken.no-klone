@@ -5,13 +5,14 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import Article from "../components/Article";
+import Section from "../components/Section";
 
 
 
 const Home: NextPage = ({data}) => {
 
   return (
-    <div >
+    <div className='' >
       <Head>
         <title>Viken Fylkeskomune</title>
         <link rel="icon" href="/favicon.ico" />
@@ -25,6 +26,9 @@ const Home: NextPage = ({data}) => {
 
         {/*Articles*/}
         <Article data={data} />
+
+        {/*Section*/}
+        <Section/>
       <Footer/>
     </div>
   )
