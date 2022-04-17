@@ -22,7 +22,10 @@ const Article = (props) => {
             {
                 props.data.articles.map((data) => {
                     return (
-                        <div className='flex flex-row gap-6  '>
+                        <div className='flex flex-row gap-6 transition ease-in-out delay-75 p-5 hover:bg-[#E0F3F9] hover:shadow-md rounded-2xl
+                        max-w-sm
+
+                         '>
                             {/*Icon*/}
                             <div>
 
@@ -39,9 +42,9 @@ const Article = (props) => {
                             </div>
 
                             {/*Title ans description*/}
-                            <div className='max-w-xs'>
-                                <h2 className='text-2xl font-medium'>{data.title}</h2>
-                                <p className='text-lg'>{data.desc}
+                            <div className='max-w-xs group'>
+                                <h2 className='text-2xl font-medium group-hover:underline underline-offset-1'>{data.title}</h2>
+                                <p className='text-lg  '>{data.desc}
                                 </p>
                             </div>
                         </div>

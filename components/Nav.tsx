@@ -48,7 +48,7 @@ const Nav = () => {
 
                  '>
                     <img className='w-44' alt='viken-logo' src='https://viken.no/kunde/grafikk/logo-viken.svg'/>
-                    <div className='flex text-2xl font-light text-[#003B5C] gap-6 invisible md:visible '>
+                    <div className='flex text-2xl font-light text-[#003B5C] gap-8 invisible md:visible '>
                         <div>Våre tjenester</div>
                         <div>Politikk</div>
                         <div>Om oss</div>
