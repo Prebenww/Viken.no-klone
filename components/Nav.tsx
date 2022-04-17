@@ -19,9 +19,9 @@ const Nav = () => {
     }
 
     return (
-        <nav>
+        <nav >
             {/*Top navbar*/}
-            <div className='flex justify-end items-center lg:pr-20 pr-10 gap-8 h-10 text-md text-white bg-[#003B5C]'>
+            <div className='flex justify-end items-center lg:pr-20 pr-10 gap-8 h-10 text-md text-white bg-[#003B5C]  '>
                 <div>For ansatte</div>
                 <div>Ledige stillinger</div>
                 <div>Kontakt oss</div>
@@ -30,7 +30,7 @@ const Nav = () => {
 
 
             {/*Navbar*/}
-            <div className=' flex justify-between  shadow-md h-full bg-[#FFFFFF]'>
+            <div className=' flex justify-between  shadow-md h-full bg-[#FFFFFF] '>
 
                 {/*Logo & 3 captions*/}
                 <div className='flex justify-start pt-7 pb-4 pl-10 md:gap-12 text-2xl font-light text-[#003B5C] '>
