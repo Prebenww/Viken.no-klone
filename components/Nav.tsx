@@ -4,6 +4,7 @@ import {SearchIcon} from "@heroicons/react/outline";
 import {useAmp} from "next/amp";
 import {useState} from "react";
 import Searchbar from "./Searchbar";
+import Link from "next/link";
 
 const Nav = () => {
 
@@ -27,13 +28,12 @@ const Nav = () => {
              text-md text-white bg-[#003B5C]
 
              hidden
-
               '>
                 <div className=' flex justify-end items-center gap-8 text-md '>
-                    <div>For ansatte</div>
-                    <div>Ledige stillinger</div>
-                    <div>Kontakt oss</div>
-                    <div>language/Språk</div>
+                    <Link href='/'><a>For ansatte</a></Link>
+                    <Link href='/'><a>Ledige stillinger</a></Link>
+                    <Link href='/'><a>Kontakt oss</a></Link>
+                    <Link href='/'><a>language/Språk</a></Link>
                 </div>
             </div>
 
@@ -47,11 +47,17 @@ const Nav = () => {
                 <div className='flex justify-start pt-7 pb-4 pl-10 md:gap-12
 
                  '>
-                    <img className='w-44' alt='viken-logo' src='https://viken.no/kunde/grafikk/logo-viken.svg'/>
+                    <Link href='/'>
+                        <a>
+                            <img className='w-44' alt='viken-logo' src='https://viken.no/kunde/grafikk/logo-viken.svg'/>
+                        </a>
+
+                    </Link>
                     <div className='flex text-2xl font-light text-[#003B5C] gap-8 invisible md:visible '>
-                        <div>Våre tjenester</div>
-                        <div>Politikk</div>
-                        <div>Om oss</div>
+                        <Link href='/tjenester'><a>Våre tjenester</a></Link>
+                        <Link href='/tjenester'><a>Politikk</a></Link>
+                        <Link href='/tjenester'><a>Om oss</a></Link>
+
                     </div>
                 </div>
 
