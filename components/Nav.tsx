@@ -57,8 +57,8 @@ const Nav = () => {
                     </div>
                     <div className='hidden md:flex text-2xl font-light text-[#003B5C] gap-8  '>
                         <Link href='/tjenester'><a>Våre tjenester</a></Link>
-                        <Link href='/'><a>Politikk</a></Link>
-                        <Link href='/'><a>Om oss</a></Link>
+                        <Link href='/politikk'><a>Politikk</a></Link>
+                        <Link href='/om-fylkeskommunen'><a>Om oss</a></Link>
                     </div>
                 </div>
 

@@ -12,8 +12,6 @@ export default function handler(
 ) {
   res.status(200).json({
 
-
-
     articles: [
         {
             title: 'Skole og opplæring',
