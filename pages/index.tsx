@@ -9,6 +9,7 @@ import Section from "../components/Section";
 
 
 
+// @ts-ignore
 const Home: NextPage = ({data}) => {
 
   return (
