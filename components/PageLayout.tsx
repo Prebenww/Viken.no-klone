@@ -51,8 +51,6 @@ const PageLayout = () => {
                     <DummyTitles/>
                 </div>
             </div>
-
-
         </div>
 
 

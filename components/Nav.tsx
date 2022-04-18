@@ -23,10 +23,9 @@ const Nav = () => {
         <nav>
             {/*Top navbar*/}
             <div className='
-            lg:flex justify-end items-center
+             lg:flex justify-end items-center
              lg:pr-20 pr-10 h-10
              text-md text-white bg-[#003B5C]
-
              hidden
               '>
                 <div className=' flex justify-end items-center gap-8 text-md '>
@@ -47,17 +46,19 @@ const Nav = () => {
                 <div className='flex justify-start pt-7 pb-4 pl-10 md:gap-12
 
                  '>
-                    <Link href='/'>
+                    <div  className='w-44'>
+                    <Link href='/' >
                         <a>
-                            <img className='w-44' alt='viken-logo' src='https://viken.no/kunde/grafikk/logo-viken.svg'/>
+                            <img className='w-44 flex ' alt='viken-logo'
+                                 src='https://viken.no/kunde/grafikk/logo-viken.svg'/>
                         </a>
 
                     </Link>
-                    <div className='flex text-2xl font-light text-[#003B5C] gap-8 invisible md:visible '>
+                    </div>
+                    <div className='hidden md:flex text-2xl font-light text-[#003B5C] gap-8  '>
                         <Link href='/tjenester'><a>Våre tjenester</a></Link>
-                        <Link href='/tjenester'><a>Politikk</a></Link>
-                        <Link href='/tjenester'><a>Om oss</a></Link>
-
+                        <Link href='/'><a>Politikk</a></Link>
+                        <Link href='/'><a>Om oss</a></Link>
                     </div>
                 </div>
 

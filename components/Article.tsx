@@ -58,7 +58,6 @@ const Article = ({data}) => {
 }
 
 
-// This gets called on every request
 
 
 export default Article;
