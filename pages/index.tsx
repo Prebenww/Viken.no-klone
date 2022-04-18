@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type {NextPage} from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Footer from "../components/Footer";
@@ -8,39 +8,44 @@ import Article from "../components/Article";
 import Section from "../components/Section";
 
 
-
 // @ts-ignore
 const Home: NextPage = ({data}) => {
 
-  return (
-    <div className='' >
-      <Head>
-        <title>Viken Fylkeskomune</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    return (
+        <div>
 
-        {/*Navigation*/}
-        <Nav/>
+            {/*Head*/}
+            <Head>
+                <title>Viken Fylkeskomune</title>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
 
-        {/*Hero*/}
-        <Hero/>
+            {/*Navigation*/}
+            <Nav/>
 
-        {/*Articles*/}
-        <Article data={data} />
+            {/*Hero*/}
+            <Hero/>
 
-        {/*Section*/}
-        <Section/>
-      <Footer/>
-    </div>
-  )
+            {/*Articles*/}
+            <Article data={data}/>
+
+            {/*Section*/}
+            <Section/>
+
+            {/*Footer*/}
+            <Footer/>
+
+        </div>
+    )
 }
+
 export async function getServerSideProps() {
     // Fetch data from external API
-    const res = await fetch(`http://localhost:3000/api/hello`)
+    const res = await fetch(`https://viken-no-klone-1f25t7bdw-prebenww.vercel.app/api/hello`)
     const data = await res.json()
 
     // Pass data to the page via props
-    return { props: { data } }
+    return {props: {data}}
 }
 
 export default Home
