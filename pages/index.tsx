@@ -6,6 +6,8 @@ import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import Article from "../components/Article";
 import Section from "../components/Section";
+import Tjenester from "./tjenester";
+import Services from "./tjenester";
 
 
 // @ts-ignore
@@ -30,7 +32,7 @@ const Home: NextPage = ({data}) => {
             <Article data={data}/>
 
             {/*Section*/}
-            <Section/>
+            <Services data={data}/>
 
             {/*Footer*/}
             <Footer/>

@@ -1,11 +1,12 @@
 import Nav from "../components/Nav";
 import PageLayout from "../components/PageLayout";
 
-const Services = () => {
+// @ts-ignore
+const Services = ({data}) => {
     return (
         <>
             <Nav/>
-            <PageLayout/>
+            <PageLayout />
         </>
     )
 }
